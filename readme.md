@@ -1,5 +1,5 @@
 # To-Do Application
-** This is a simple to-do application that allows users to add, delete and filter to-do items. **
+**This is a simple to-do application that allows users to add, delete and filter to-do items.**
 
 ## Adding a To-Do Item
 - Click the submit button to add a new to-do item to the container.
