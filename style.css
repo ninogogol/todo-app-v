@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #171823;
+    color: #C8CBE7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-image {
+    background-image: url(images/bg-mobile-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    max-height: 260px;
+    position: relative;
+}
+
+.heading {
+    width: 86%;
+    max-width: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    color: #FFFFFF;
+}
+
+.textInput {
+    width: 86%;
+    max-width: 540px;
+    height: 48px;
+    background-color: #25273D;
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    outline: none;
+    padding: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn {
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #7be5ff 0%, #cf82f5 100%);
+    transition: 0.3s;
+}
+
+.textInput {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.25px;
+    color: #C8CBE7;
+}
+
+.formWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-items: center;
+    width: 86%;
+    max-width: 540px;
+    height: 48px;
+    margin: 20px auto;
+    font-weight: 700;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 1px solid #E3E4F1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.formWrapper form {
+    display: flex;
+    align-items: end;
+}
+
+.formWrapper form label {
+    user-select: none;
+}
+
+form label {
+    cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 15px;
+    color: #FFFFFF;
+    content: "\f00c";
+    display: none;
+}
+
+input[type="checkbox"]:checked {
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 100%);
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+.container {
+    width: 86%;
+    max-width: 540px;
+    min-height: 300px;
+    background-color: #25273D;
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 20px 0 20px;
+}
+
+.filter {
+    width: 86%;
+    max-width: 540px;
+    height: 48px;
+    background-color: #25273D;
+    color: #5B5E7E;
+    font-weight: 700;
+    box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.filter span {
+    margin-inline: 20px;
+}
+
+.filter .btn {
+    position: absolute;
+    right: 20px;
+}
+
+.filter .active {
+    color: #3A7CFD;
+}
+
+.filter span:hover {
+    color: #83acff;
+    cursor: pointer;
+}
+
+.toDoWrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid #393A4B;
+}
+
+.toDoWrapper .select, .toDoWrapper label {
+    margin-bottom: 10px;
+}
+
+.toDoWrapper .select {
+    margin-right: 15px;
+}
+
+label.priorityToDo {
+    color: #b98dcf;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Styles for light modus */
+
+.modusIcon {
+    display: none;
+}
+
+.modusIcon.activeModus {
+    display: block;
+    cursor: pointer;
+}
+
+body.lightModusWhite {
+    background-color: #FAFAFA;
+}
+
+.bgWhite {
+    background-color: #FFFFFF;
+    color: #171823;
+    box-shadow: 0px 35px 50px -15px rgba(194, 195, 214, 0.5);
+}
+
+.bg-image.lightModus {
+    background-image: url(images/bg-mobile-light.jpg);
+}
+
+.borderBottomWhite {
+    border-bottom: 1px solid #E3E4F1;
+}
+
+@media only screen and (min-width: 768px) {
+    .heading {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .bg-image {
+        background-image: url(images/bg-desktop-dark.jpg);
+        height: 40vh;
+        max-height: 300px;
+        background-position: 50% 50%;
+    }
+    .bg-image.lightModus {
+        background-image: url(images/bg-desktop-light.jpg);
+        background-position: 50% 15%;
+    }
+}

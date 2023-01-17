@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b33b494db7.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+    <div class="bg-image">
+        <div class="heading">
+          <h1>Todo</h1>
+          <img id="sun" class="activeModus modusIcon" src="images/icon-sun.svg" alt="icon-sun">
+          <img id="moon" class="modusIcon" src="images/icon-moon.svg" alt="icon-sun">
+        </div>
+        <form action="javascript:void(0)">
+          <input class="textInput" type="text"  id="toDo" placeholder="Create a new todo...">
+        </form>
+        <div class="formWrapper">
+          <form>
+            <input class="checkbox" type="checkbox" name="" id="priority">
+            <label for="priority">Check for priority</label>  
+          </form>
+          <button class="btn" id="submitBtn">Submit</button>
+        </div>
+    </div>
+      <div class="container"></div>
+    <div class="filter">
+      <span class="active" id="showAll">All</span>
+      <span id="filterPriority">Priority</span>
+      <button class="btn" id="deletSelectedItems">Delete</button>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/nino-gogoladze-80a075227/" target="_blank">Nino</a>.
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
